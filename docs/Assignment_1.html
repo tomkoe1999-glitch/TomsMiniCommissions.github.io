@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Miniature painting commission website with gallery and contact form.">
+  <title>Miniature Painting Commissions</title>
+</head>
+
+<body>
+  <header>
+    <h1>Miniature Painting Commissions</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#commissions">Commissions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Custom Painted Miniatures</h2>
+      <p>
+        I offer miniature painting commissions for tabletop games, role-playing games,
+        and collectors. Each miniature is painted according to your preferred style,
+        color scheme, and level of detail.
+      </p>
+      <a href="#contact">Request a Commission</a>
+    </section>
+
+    <section id="about">
+      <h2>About My Work</h2>
+      <p>
+        Add a short description of your painting style, experience, and the types of
+        miniatures you like to paint. You can also explain what customers can expect
+        when ordering a commission from you.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Here are some examples of my painted miniatures.</p>
+
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/miniature-1.jpg" alt="Painted fantasy hero miniature">
+          <figcaption>Fantasy Hero</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/miniature-2.jpg" alt="Painted sci-fi soldier miniature">
+          <figcaption>Sci-Fi Soldier</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/miniature-3.jpg" alt="Painted monster miniature">
+          <figcaption>Monster Creature</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="commissions">
+      <h2>Commission Options</h2>
+
+      <article>
+        <h3>Basic Paint Job</h3>
+        <p>
+          A simple tabletop-ready paint job with clean base colors and basic details.
+        </p>
+      </article>
+
+      <article>
+        <h3>Advanced Paint Job</h3>
+        <p>
+          A more detailed paint job with shading, highlights, effects, and simple basing.
+        </p>
+      </article>
+
+      <article>
+        <h3>Display Quality</h3>
+        <p>
+          A high-detail paint job for special characters, display models, or collector pieces.
+        </p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <p>Use this form to request a commission or ask a question.</p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="miniature-type">Type of Miniature</label>
+          <input
+            type="text"
+            id="miniature-type"
+            name="miniature-type"
+            placeholder="Example: Warhammer, D&D, display model"
+          >
+        </p>
+
+        <p>
+          <label for="commission-level">Commission Level</label>
+          <select id="commission-level" name="commission-level">
+            <option value="basic">Basic Paint Job</option>
+            <option value="advanced">Advanced Paint Job</option>
+            <option value="display">Display Quality</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </p>
+
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Miniature Painting Commissions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
